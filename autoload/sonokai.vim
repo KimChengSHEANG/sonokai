@@ -10,7 +10,7 @@ function! sonokai#get_configuration() "{{{
   return {
         \ 'style': get(g:, 'sonokai_style', 'default'),
         \ 'colors_override': get(g:, 'sonokai_colors_override', {}),
-        \ 'transparent_background': get(g:, 'sonokai_transparent_background', 0),
+        \ 'transparent_background': get(g:, 'sonokai_transparent_background', 1),
         \ 'disable_italic_comment': get(g:, 'sonokai_disable_italic_comment', 0),
         \ 'enable_italic': get(g:, 'sonokai_enable_italic', 0),
         \ 'cursor': get(g:, 'sonokai_cursor', 'auto'),
@@ -42,7 +42,8 @@ function! sonokai#get_palette(style, colors_override) "{{{
           \ 'bg_blue':    ['#85d3f2',   '110'],
           \ 'diff_blue':  ['#354157',   '17'],
           \ 'diff_yellow':['#4e432f',   '54'],
-          \ 'fg':         ['#e2e2e3',   '250'],
+          \ 'fg':         ['#e2e2e3',   '247'],  
+          "\ 'fg':         ['#e2e2e3',   '250'],  
           \ 'red':        ['#fc5d7c',   '203'],
           \ 'orange':     ['#f39660',   '215'],
           \ 'yellow':     ['#e7c664',   '179'],
