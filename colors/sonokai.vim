@@ -303,7 +303,9 @@ call sonokai#highlight('HintFloat', s:palette.green, s:palette.bg2)
 if &diff
   call sonokai#highlight('CurrentWord', s:palette.bg0, s:palette.green)
 elseif s:configuration.current_word ==# 'grey background'
-  call sonokai#highlight('CurrentWord', s:palette.none, s:palette.bg2)
+  "call sonokai#highlight('CurrentWord', s:palette.none, s:palette.bg2)
+  call sonokai#highlight('CurrentWord', s:palette.bg4, s:palette.fg)
+
 else
   call sonokai#highlight('CurrentWord', s:palette.none, s:palette.none, s:configuration.current_word)
 endif
